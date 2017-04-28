@@ -10,8 +10,15 @@
             <h1>{{message}}</h1>
             <h3>{{swap}}</h3>
             <button v-on:click="changeMe()">Change Above</button>
+            <br>
             <input v-model="drink"/>
             <cheese v-bind:food="drink"></cheese>
+            <hr>
+            <h1>Parent and Child</h1>
+            <div>
+                {{total}}
+                <button-counter v-on:rice="incrementTotal"></button-counter>
+            </div>
             
         </div>
 
