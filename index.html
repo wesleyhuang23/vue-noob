@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="noob">
+            <h1>{{message}}</h1>
+            <h3>{{swap}}</h3>
+            <button v-on:click="changeMe()">Change Above</button>
+            <input v-model="drink"/>
+            <cheese v-bind:food="drink"></cheese>
+            
+        </div>
+
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./app.js"></script>
+    </body>
+</html>
